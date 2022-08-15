@@ -7,7 +7,7 @@
 
 - ### :pencil2: **开发环境：**
 
- ![Windows](https://img.shields.io/badge/-Windows_11-0078D6?style=flat-square&logo=windows&logoColor=white) ![Python](https://img.shields.io/badge/-Python_3.10-0078D6?style=flat-square&logo=Python&logoColor=white) ![Pycharm](https://img.shields.io/badge/-Pycharm-007ACC?style=flat-square&logo=Pycharm&logoColor=white) ![Visual Studio Code](https://img.shields.io/badge/-Visual_Studio_Code-007ACC?style=flat-square&logo=visual-studio-code&logoColor=white) ![Git](https://img.shields.io/badge/-Git-F05032?style=flat-square&logo=git&logoColor=white)
+ ![Windows](https://img.shields.io/badge/-Windows_11-0078D6?style=flat-square&logo=windows&logoColor=white) ![Debian](https://img.shields.io/badge/-Debian_11-0078D6?style=flat-square&logo=Debian&logoColor=white) ![Python](https://img.shields.io/badge/-Python_3.10-0078D6?style=flat-square&logo=Python&logoColor=white) ![Pycharm](https://img.shields.io/badge/-Pycharm-007ACC?style=flat-square&logo=Pycharm&logoColor=white) ![Visual Studio Code](https://img.shields.io/badge/-Visual_Studio_Code-007ACC?style=flat-square&logo=visual-studio-code&logoColor=white) ![Git](https://img.shields.io/badge/-Git-F05032?style=flat-square&logo=git&logoColor=white)
  
  - ### :seedling: **现状：**
  
