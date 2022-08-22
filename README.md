@@ -13,6 +13,10 @@
  
  没车，没房，没贷款，**没对象**。好久没健身了，身体颓废中。
  
+ ## 链接
+ 
+ - ![pycharm常用快捷键](https://github.com/3293406747/3293406747/blob/393805347e9edef8c5fdff7e8ada4cd12b01b93b/pycharm%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%94%AE.md)
+ 
  ## 联系我
  
  :man_scientist: **QQ：** **3293406747**
