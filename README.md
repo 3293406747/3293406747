@@ -13,7 +13,7 @@
  
  没车，没房，没贷款，**没对象**。好久没健身了，身体颓废中。
  
- ## 链接
+ ## 友情链接
  
  - [pycharm常用快捷键](https://github.com/3293406747/3293406747/blob/393805347e9edef8c5fdff7e8ada4cd12b01b93b/pycharm%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%94%AE.md)
   - [pytest使用说明](https://github.com/3293406747/3293406747/blob/7c18f04c348c21385594fc89ea945a9d199f5d2d/pytest%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6)
