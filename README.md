@@ -16,9 +16,9 @@
  ## 链接
  
  - [pycharm常用快捷键](https://github.com/3293406747/3293406747/blob/393805347e9edef8c5fdff7e8ada4cd12b01b93b/pycharm%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%94%AE.md)
+  - [pytest使用说明](https://github.com/3293406747/3293406747/blob/7c18f04c348c21385594fc89ea945a9d199f5d2d/pytest%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6)
  - [测试用例设计及编写](https://github.com/3293406747/3293406747/blob/f8d820d36c1c3e790088c105e3f603aa53bf75cf/%E6%B5%8B%E8%AF%95%E7%94%A8%E4%BE%8B%E8%AE%BE%E8%AE%A1%E5%8F%8A%E7%BC%96%E5%86%99.pdf)
- - [pytest使用说明](https://github.com/3293406747/3293406747/blob/7c18f04c348c21385594fc89ea945a9d199f5d2d/pytest%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6)
- 
+
  ## 联系我
  
  :man_scientist: **QQ：** **3293406747**
