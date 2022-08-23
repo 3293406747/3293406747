@@ -24,7 +24,7 @@
 
 ![img7](img/img7.png)
 
-### 4.相对路径/绝对路径问题!
+### 4.相对路径/绝对路径问题
 
 ![img8](img/img8.png)
 ![img9](img/img9.png)
