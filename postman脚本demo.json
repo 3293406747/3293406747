@@ -1,0 +1,405 @@
+{
+	"info": {
+		"_postman_id": "5ddd3f79-589d-4d0d-97a2-cb4d86ae5217",
+		"name": "postman脚本demo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get请求",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"// json提取器\r",
+							"// 1.使用json提取器提取args值\r",
+							"var date = JSON.parse(responseBody)     //把返回的字符串格式数据转换为对象的格式\r",
+							"console.log('json提取器:',date.args)\r",
+							"// 2.使用json提取器提取args值\r",
+							"var jsonDate = pm.response.json()\r",
+							"console.log('json提取器:',jsonDate.args)\r",
+							"\r",
+							"// json断言\r",
+							"pm.test(\"检查响应中arg中foo1值正确\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.args.foo1).to.eql(String(\"bar1\"));\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://postman-echo.com/get?foo1=bar1&foo2=bar2",
+					"protocol": "https",
+					"host": [
+						"postman-echo",
+						"com"
+					],
+					"path": [
+						"get"
+					],
+					"query": [
+						{
+							"key": "foo1",
+							"value": "bar1"
+						},
+						{
+							"key": "foo2",
+							"value": "bar2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post请求-json传参",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"var time = Date.now()\r",
+							"// 设置为全局变量\r",
+							"pm.globals.set(\"time\", time);\r",
+							"\r",
+							"// 获取全局变量\r",
+							"pm.globals.get(\"time\")\r",
+							"globals[\"time\"]\r",
+							"globals.time\r",
+							"\r",
+							"// 设置为环境变量\r",
+							"pm.environment.set(\"role\",\"test\")\r",
+							"\r",
+							"// 获取环境变量\r",
+							"pm.environment.get(\"role\")\r",
+							"environment[\"role\"]\r",
+							"environment.role\r",
+							"\r",
+							"// pm内置变量\r",
+							"// 生成当前时间时间戳: {{$timestamp}}\r",
+							"// 生成0-1000之间的随机数: {{$randomInt}}\r",
+							"// 3生成速记guid字符串: {{$guid}}"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"data1\": \"{{$guid}}\",\r\n    \"data2\": \"{{$randomInt}}\",\r\n    \"data3\": \"{{$guid}}\",\r\n    \"data4\": \"{{time}}\",\r\n    \"data5\": \"{{role}}\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://postman-echo.com/post",
+					"protocol": "https",
+					"host": [
+						"postman-echo",
+						"com"
+					],
+					"path": [
+						"post"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post请求 -data传参",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "data1",
+							"value": "{{$guid}}",
+							"type": "text"
+						},
+						{
+							"key": "data2",
+							"value": "{{$randomInt}}",
+							"type": "text"
+						},
+						{
+							"key": "data3",
+							"value": "{{$guid}}",
+							"type": "text"
+						},
+						{
+							"key": "data4",
+							"value": "{{time}}",
+							"type": "text"
+						},
+						{
+							"key": "data5",
+							"value": "{{role}}",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/C:/Users/86159/Desktop/test.png"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://postman-echo.com/post",
+					"protocol": "https",
+					"host": [
+						"postman-echo",
+						"com"
+					],
+					"path": [
+						"post"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "设置cookie",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://httpbin.org/cookies/set?device=desktop&lang=zh-cn&theme=default",
+					"protocol": "http",
+					"host": [
+						"httpbin",
+						"org"
+					],
+					"path": [
+						"cookies",
+						"set"
+					],
+					"query": [
+						{
+							"key": "device",
+							"value": "desktop"
+						},
+						{
+							"key": "lang",
+							"value": "zh-cn"
+						},
+						{
+							"key": "theme",
+							"value": "default"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "获取cookie",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://httpbin.org/cookies",
+					"protocol": "http",
+					"host": [
+						"httpbin",
+						"org"
+					],
+					"path": [
+						"cookies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "png图片下载",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://httpbin.org/image/png",
+					"protocol": "http",
+					"host": [
+						"httpbin",
+						"org"
+					],
+					"path": [
+						"image",
+						"png"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "获取html响应",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"// 正则提取器\r",
+							"// new RegExp()表示新建一个正则表达式\r",
+							"var Regexpdate = responseBody.match(new RegExp('Availing (.*?) of the mild'))\r",
+							"console.log('正则提取器:',Regexpdate[1])\r",
+							"\r",
+							"// 文本断言\r",
+							"pm.test(\"检查响应中包含himself\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"himself\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://httpbin.org/html",
+					"protocol": "http",
+					"host": [
+						"httpbin",
+						"org"
+					],
+					"path": [
+						"html"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "数据驱动",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"/* 数据驱动 */\r",
+							"function iteration_get_data(arry){\r",
+							"    // 迭代第几次，从0开始\r",
+							"    const interation = pm.info.iteration;\r",
+							"    // 迭代总次数\r",
+							"    const iterationCount = pm.info.iterationCount;\r",
+							"    // 根据迭代次数设置集合变量\r",
+							"    try{\r",
+							"        process_variety(arry,interation)\r",
+							"    }catch(e){\r",
+							"        console.log(e);\r",
+							"    };\r",
+							"};\r",
+							"\r",
+							"function process_variety(arry,interation){\r",
+							"    var v_names = Object.keys(arry[interation])\r",
+							"    var v_values = Object.values(arry[interation])\r",
+							"    // 从数组取值，数组为空时结束\r",
+							"    // 获取数组长度\r",
+							"    for(v_names;v_names.length!=0;){\r",
+							"        var v_name = v_names.pop();\r",
+							"        var v_value = v_values.pop();\r",
+							"        pm.collectionVariables.set(v_name, v_value);\r",
+							"    };   \r",
+							"};\r",
+							"\r",
+							"// 数据，迭代三次\r",
+							"const names = [\r",
+							"    {name:'author',age:13},\r",
+							"    {name:'test',age:17},\r",
+							"    {name:'admin',age:20}\r",
+							"    ];\r",
+							"iteration_get_data(names);"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://postman-echo.com/get",
+					"protocol": "https",
+					"host": [
+						"postman-echo",
+						"com"
+					],
+					"path": [
+						"get"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					"// 状态断言",
+					"pm.test(\"检查状态码为200\", function () {",
+					"    pm.response.to.have.status(200);",
+					"});"
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "age",
+			"value": ""
+		},
+		{
+			"key": "name",
+			"value": ""
+		}
+	]
+}
