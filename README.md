@@ -19,7 +19,6 @@
  - [pytest使用说明](pytest单元测试框架.txt)
  - [jmeter的demo](jmeter脚本demo.jmx)
  - [postman的demo](postman脚本demo.json)
- - [python常见问题整理](python常见问题整理.md)
  - [测试用例设计及编写](测试用例设计及编写.pdf)
 
  ## 联系我
