@@ -16,7 +16,6 @@
  - [pytest使用说明](pytest单元测试框架.txt)
  - [jmeter的demo](jmeter脚本demo.jmx)
  - [postman的demo](postman脚本demo.json)
- - [测试用例设计及编写](测试用例设计及编写.pdf)
 
 <!--
 **3293406747/3293406747** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
