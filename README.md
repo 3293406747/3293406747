@@ -8,6 +8,8 @@
 - Ubuntu22
 - python3.10
 - jdk1.8
+- mysql8
+- redis5
 
 ## 项目
 
