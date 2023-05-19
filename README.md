@@ -24,7 +24,7 @@
 
 这里是我的最新文章：
 
-- [python中selenium等到元素可点击，元素未点击成功解决办法](http://t.csdn.cn/6sTEo)
+- [python中selenium等到元素可点击，元素未点击成功解决办法](http://t.csdn.cn/NW4E9)
 - [Ubuntu中使用Pytest时UnicodeDecodeError解决办法](http://t.csdn.cn/PUza5)
 
 更多文章可以在我的博客中找到 [链接](https://blog.csdn.net/qy85329140)。
