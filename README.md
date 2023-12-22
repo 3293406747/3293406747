@@ -1,34 +1,5 @@
 <h1 align="center">欢迎来到我的 GitHub 主页！</h1>
 
-## 开发环境
-
-以下是我的开发环境：
-
-- Windows11
-- Ubuntu22
-- python3.10
-- jdk1.8
-- mysql8
-- redis5
-
-## 项目
-
-这里列出了我最近的一些开源项目：
-
-- [ddddpytest](https://github.com/3293406747/ddddpytest)：基于pytest的异步接口自动化框架。
-- [ddddpytest-ui](https://github.com/3293406747/ddddpytest-ui)：基于pytest的轻量级web自动化测试框架。
-
-更多项目可以在我的 [Github 页面](https://github.com/3293406747) 上找到。
-
-## 博客文章
-
-这里是我的最新文章：
-
-- [python中selenium等到元素可点击，元素未点击成功解决办法](http://t.csdn.cn/NW4E9)
-- [Ubuntu中使用Pytest时UnicodeDecodeError解决办法](http://t.csdn.cn/PUza5)
-
-更多文章可以在我的博客中找到 [链接](https://blog.csdn.net/qy85329140)。
-
 ## 联系我
 
 如果您有任何问题或想要与我联系，请通过以下方式与我联系：
